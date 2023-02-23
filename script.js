@@ -23,6 +23,12 @@ function inflationCalculator() {
   let inflationRate = document.querySelector('#inflationRate');
   let money = document.querySelector('#money');
   let years = document.querySelector('#years');
+
+  let calculateButton = document.querySelector('#calculateButton');
+
+  calculateButton.addEventListener('click', () => {
+    inflationCalculator();
+  });
   
   inflationRate.addEventListener('input', () => {
     inflationCalculator();
